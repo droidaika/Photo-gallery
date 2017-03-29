@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   </head>
 <body>
 
@@ -79,11 +80,9 @@ function loadImage() {
 	divArray[i].className = "item";
 	}
 	imgArray[i] = document.createElement("img");
-	if(i==1){
-	imgArray[i].src = "images/" + i + ".png";
-	}else{
+	
 	imgArray[i].src = "images/" + i + ".jpg";
-	}
+	
 	listArray[i].setAttribute("data-target","#myCarousel");
 	listArray[i].setAttribute("data-slide-to",(i-1));
 	
